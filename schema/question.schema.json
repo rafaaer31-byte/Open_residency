@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Question",
+  "type": "object",
+  "required": ["id", "statement", "options", "answer", "topic", "source", "license", "review_status"],
+  "properties": {
+    "id": {"type": "string"},
+    "statement": {"type": "string"},
+    "options": {"type": "object", "additionalProperties": {"type": "string"}},
+    "answer": {"type": "string"},
+    "topic": {"type": "string", "description": "Grande área e tema, ex.: Clínica Médica > Cardiologia"},
+    "skill": {"type": "string", "enum": ["diagnostico", "conduta", "fisiopatologia", "interpretacao_exame", "epidemiologia_saude_publica", "etica"]},
+    "error_types": {"type": "array", "items": {"type": "string", "enum": ["lacuna_conteudo", "interpretacao_enunciado", "raciocinio_clinico", "priorizacao_conduta", "confusao_recomendacao"]}},
+    "source": {"type": "object", "properties": {"title": {"type": "string"}, "url": {"type": "string"}, "version_date": {"type": "string"}}},
+    "license": {"type": "string", "description": "Licença que permite redistribuição, ou 'original'"},
+    "origin": {"type": "string", "enum": ["original", "dominio_publico", "licenca_aberta", "gerado_por_ia"]},
+    "review_status": {"type": "string", "enum": ["nao_revisado", "revisado", "desatualizado", "contestado"]},
+    "reviewer": {"type": "string"}
+  }
+}
