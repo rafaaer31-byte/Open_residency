@@ -1,0 +1,23 @@
+{
+  "id": "exemplo-001",
+  "statement": "Paciente de 58 anos, hipertenso e diabético, chega à UPA com dor precordial em aperto iniciada há 40 minutos, associada a sudorese. O ECG mostra supradesnivelamento de ST em derivações precordiais. Qual é a conduta inicial mais adequada?",
+  "options": {
+    "A": "Solicitar troponina e aguardar resultado antes de qualquer intervenção",
+    "B": "Ativar protocolo de dor torácica, realizar ECG seriado e iniciar tratamento conforme protocolo local",
+    "C": "Prescrever antiácido e observar por 2 horas",
+    "D": "Encaminhar para avaliação ambulatorial em 48 horas"
+  },
+  "answer": "B",
+  "topic": "Clínica Médica > Cardiologia > Síndrome coronariana aguda",
+  "skill": "conduta",
+  "error_types": ["priorizacao_conduta", "raciocinio_clinico"],
+  "source": {
+    "title": "Diretriz de síndrome coronariana aguda sem supradesnivelamento de ST (exemplo ilustrativo)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/",
+    "version_date": "2024"
+  },
+  "license": "original",
+  "origin": "original",
+  "review_status": "nao_revisado",
+  "reviewer": ""
+}
